@@ -1,5 +1,6 @@
 
-.parallax {
+h1 {
+  margin-bottom: 1em;
 }
 
 .center {
@@ -15,6 +16,21 @@
 }
 
 .top-image {
-  height: 50em;
+  height: 42em;
   background: transparent url('../images/stillwater.jpg') center center;
+}
+
+#mapSite,
+#mapExtras {
+  width: 100%;
+  height: 32em;
+}
+
+#mapExtras + h3 {
+  margin-top: 1em;
+}
+
+ul {
+  margin-left: 2em;
+  list-style-type: circle;
 }

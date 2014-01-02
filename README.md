@@ -1,4 +1,3 @@
 # Wedsite
 
-Wedding site for Hilary and Alan
-
+Wedding site for Hilary and Alan.  Made to be deployed on Heroku.
