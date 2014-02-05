@@ -10,7 +10,11 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="//api.tiles.mapbox.com/mapbox.js/v1.6.0-beta0/mapbox.css" rel="stylesheet">
+  <base target="_blank">
+
+  <link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Amatic+SC:400,700" rel="stylesheet" type="text/css">
+
+  <link href="//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css" rel="stylesheet">
   <link rel="stylesheet" href="bower_components/gumby/css/gumby.css">
   <link rel="stylesheet" href="styles/gumby-extras.css">
   <link rel="stylesheet" href="styles/main.css">
@@ -25,23 +29,25 @@
 
   <div class="row">
     <div class="twelve columns">
-      <h1 class="center">Hilary and Alan <br> are getting married!</h1>
+      <div class="heading-container">
+        <h1 class="center">Hilary and Alan <br> are getting married!</h1>
+        <h3>June 27, 2014</h3>
+      </div>
     </div>
   </div>
-
-  <div class="top-image parallax section-block" gumby-parallax="0.15"></div>
 
   <div class="row section-block">
     <div class="twelve columns">
-      <h3>The main ceremony will be on</h3>
-      <h2>June 27, 2014</h2>
+      <img src="images/collage.png" />
     </div>
   </div>
+
+  <div class="trinket-spacer jars"></div>
 
   <div class="row section-block">
     <div class="twelve columns">
       <h3>The reception and ceremony will be held at</h3>
-      <h2>Rum River Barn &amp; Vineyard</h2>
+      <h2 class="">Rum River Barn &amp; Vineyard</h2>
 
       <div id="mapSite"></div>
 
@@ -65,7 +71,7 @@
     </div>
   </div>
 
-  <hr class="section-block">
+  <div class="trinket-spacer lantern"></div>
 
   <div class="row section-block">
     <div class="twelve columns">
@@ -74,15 +80,15 @@
       <table>
         <tbody>
           <tr>
-            <td><h4>June 26, Thursday</h4></td>
+            <td class="day">June 26, Thursday</td>
             <td>Wedding party will be on site at Rum River Barn.</td>
           </tr>
           <tr>
-            <td><h4>June 27, Friday</h4></td>
-            <td>Not set in stone yet.  Ceremony starts at 5:30PM, please come early.  Reception is at 7PM.</td>
+            <td class="day">June 27, Friday</td>
+            <td>The wedding!  Ceremony starts at 5:30PM, please come early.  Reception is at 7PM.</td>
           </tr>
           <tr>
-            <td><h4>June 28, Saturday</h4></td>
+            <td class="day">June 28, Saturday</td>
             <td>We would like to see more of you, but have not set any definite plans yet.  This will probably (but not definitely) be near the wedding venue.</td>
           </tr>
         </tbody>
@@ -90,44 +96,30 @@
     </div>
   </div>
 
+  <div class="trinket-spacer jar"></div>
+
   <div class="row section-block">
     <div class="twelve columns">
       <h2>Accomodations and Attractions</h2>
 
+      <h3>Near the wedding (central Minnesota)</h3>
+
       <div id="mapExtras"></div>
 
-      <h3>Lodging</h3>
-
-      <p>We are currently working on more details about this.  Do let us know if you have any problems finding a place.</p>
-
-      <h4>Near the wedding</h4>
+      <p>We are currently working on more details about this.  Do let us know if you have any problems finding a place to stay.</p>
 
       <ul>
-        <li>The <a href="https://www.grandcasinomn.com/grand-casino-mille-lacs/where-to-stay/grand-casino-mille-lacs-hotel.aspx" target="_blank">Grand Casino Mille Lacs Hotel</a> is fairly close and will likely have a shuttle service to the wedding.  We have reserved a block of rooms here (details coming)</a></li>
-        <li>The nearest town to the wedding is <strong>Milaca, MN</strong>.  There are a <a href="https://www.google.com/search?q=Hotels+Milaca%2C+MN" target="_blank">few hotels</a> in this area.</li>
+        <li>The <a href="https://www.grandcasinomn.com/grand-casino-mille-lacs/where-to-stay/grand-casino-mille-lacs-hotel.aspx" target="_blank">Grand Casino Mille Lacs Hotel</a> is fairly close and will likely have a shuttle service to the wedding.  We have reserved a block of rooms here; it should be under our names or Judy Tompke.</a></li>
+        <li>The <a href="http://www.thevillageatizatysresort.com/index.htm">Village at Izatys</a> has some nice rentals and others have already made reservations there.</li>
+        <li>The nearest town to the wedding is <strong>Milaca, MN</strong>.  There are a <a href="https://www.google.com/search?q=Hotels+Milaca%2C+MN" target="_blank">few hotels</a> in this area like the <a href="http://milacaphoenixhotel.com/">Phoenix Hotel</a> and the <a href="http://www.super8.com/hotels/minnesota/milaca/super-8-milaca/hotel-overview">Super 8</a>.</li>
         <li><strong>St. Cloud</strong> is about 45 minutes away from the wedding but has many <a href="https://www.google.com/search?q=Hotels+St.+Cloud%2C+MN" target="_blank">hotel options</a>.</li>
         <li>There are a number of <a href="https://www.google.com/search?q=house+rentals+mille+lacs+lake+mn" target-"_blank">vacation rentals on Mille Lacs Lake</a>.  Note that these may fill up quickly and keep in mind that is a very large lake.</li>
+        <li>The <a href="http://www.exploreminnesota.com/places-to-stay/index.aspx">Explore Minnesota</a> site has a number of listing.  Here is a <a href="http://www.exploreminnesota.com/places-to-stay/results/index.aspx?locationName=Hillman&locationType=City&radiusAndCity=true&radius=50&x=60&y=9&classifids=1&mustMatchAmens=true&pagesize=25&pageindex=0&paging=true">search of places to stay within 50 miles of the wedding venue</a>.
         <li>Rum River Barn and Vineyard offers a <strong>camping area on site</strong> that can be used Thursday and Friday night.  Please let us know if you would like to stay here so we can tell the venue.</li>
         <li>The <strong>Mille Lacs State Park</strong> is only about 20 minutes away and has <a href="http://www.dnr.state.mn.us/state_parks/mille_lacs_kathio/camping.html" target="_blank">camping options</a>.</li>
-      </ul>
 
-      <h4>In the cities</h4>
 
-      <ul>
-        <li>There are multiple, relatively cheap hotels near the Mall of America.  It is not central to the Twin Cities, but fairly close to where we live.</li>
-        <li>(more to come)</li>
-      </ul>
 
-      <h3>Things to do</h3>
-
-      <p>Minnesota has many great things to do and see.  In the Twin Cities you have plenty of options:</p>
-
-      <ul>
-        <li>Walker Art Museum</li>
-        <li>Mill City Museum</li>
-        <li>Science Museum of Minnesota</li>
-        <li>See music at First Avenue</li>
-        <li>(more to come)</li>
       </ul>
 
       <p>And there are many attractions throughout greater Minnesota:</p>
@@ -143,12 +135,46 @@
     </div>
   </div>
 
+
+
+  <div class="row section-block">
+    <div class="twelve columns">
+
+      <h3>In the Twin Cities</h3>
+
+      <div id="mapExtras-cities"></div>
+
+      <p>We live in South Minneapolis.  There are few hotels in the City of Minneapolis besides downtown which can be a bit expensive.  The surrounding subrurbs have more hotels and cheaper prices.  We are very close to Richfield, MN.  Do let us know if you have any problems finding a place to stay.</p>
+
+      <ul>
+        <li>There are multiple, relatively cheap hotels <a href="http://www.mallofamerica.com/visit/hotels">near the Mall of America<a/> or around <a href="https://www.google.com/search?q=hotels+near+richfield%2C+mn&rlz=1C5CHFA_enUS503US503&oq=hotels+near+richfield%2C+mn&aqs=chrome..69i57j0l4.6751j0j4&sourceid=chrome&espv=210&es_sm=91&ie=UTF-8">Richfield, MN</a>.  It is not central to Minneapolis, but only 15 minutes from where we live.</li>
+        <li>There are a number of <a href="http://www.hotels.com/de1410652/hotels-minneapolis-minnesota/">hotels in downtown Minneapolis</a> but these can be expensive.</li>
+      </ul>
+
+      <h3>Things to do</h3>
+
+      <p>Lots of thigns to do in the Twin Cities:</p>
+
+      <ul>
+        <li>Walker Art Museum</li>
+        <li>Mill City Museum</li>
+        <li>Science Museum of Minnesota</li>
+        <li>See music at First Avenue</li>
+        <li>(more to come)</li>
+      </ul>
+
+    </div>
+  </div>
+
   <div class="row section-block">
     <div class="twelve columns">
       <h2>Transportation</h2>
-      <p>We are currently working on these details; come back later for more.  We are hoping to provide transport to and from the wedding and possibly from the airport to the wedding area.
+      <p>We are currently working on these details; come back later for more.  We are hoping to provide transport to and from the wedding and possibly from the airport to the wedding area.  We definitely want you to have a good time (drink) and ensure you get to your destination safely.
     </div>
   </div>
+
+
+  <div class="trinket-spacer jars-other"></div>
 
   <div class="row section-block">
     <div class="twelve columns">
@@ -173,7 +199,7 @@
   <script>window.jQuery || document.write('<script src="bower_components/html5-boilerplate/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
   <script src="bower_components/gumby/js/libs/gumby.min.js"></script>
   <script src="bower_components/gumby-parallax/gumby.parallax.js"></script>
-  <script src="//api.tiles.mapbox.com/mapbox.js/v1.6.0-beta0/mapbox.js"></script>
+  <script src="//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js"></script>
   <script src="js/app.js"></script>
 
 </body>
