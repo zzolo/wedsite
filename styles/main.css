@@ -1,4 +1,5 @@
 
+
 .heading {
   font-family: "Amatic SC", "Open Sans", sans-serif;
   font-weight: 300;
@@ -11,6 +12,14 @@
 
 .copy {
 
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.paper {
+  background: transparent url('../images/lightpaperfibers.png') top center repeat;
 }
 
 .heading-container {
@@ -109,6 +118,25 @@ table .day {
   font-size: 1.25em;
   font-family: "Cabin+Sketch", "Open Sans", serif;
   padding-bottom: 1em;
+}
+
+
+
+.save-the-date h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.save-the-date h3 {
+  text-align: center;
+}
+
+.save-the-date h3 a {
+  color: #444444;
+}
+
+.save-the-date .trinket-spacer.jar {
+  margin-bottom: 2em;
 }
 
 @media only screen and (max-width: 740px) {
