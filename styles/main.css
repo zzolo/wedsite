@@ -39,6 +39,14 @@ h1 {
   color: #858589;
 }
 
+h1 a {
+  color: inherit;
+}
+
+h1 a:hover {
+  color: inherit;
+}
+
 h2 {
   font-family: "Amatic SC", "Open Sans", sans-serif;
   font-weight: 500;
@@ -146,4 +154,3 @@ table .day {
     padding-top: 5em;
   }
 }
-
