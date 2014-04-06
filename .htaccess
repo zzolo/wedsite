@@ -1,0 +1,3 @@
+RedirectMatch 301 ^/RSVP.HTML\.php$ /rsvp.html
+RedirectMatch 301 ^/rsvp.HTML\.php$ /rsvp.html
+RedirectMatch 301 ^/RSVP.html\.php$ /rsvp.html
