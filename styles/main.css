@@ -181,7 +181,7 @@ table .day {
 }
 
 
-.slick-slide {
+#photo-booth-slide-show .slick-slide {
   opacity: 0.4;
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
@@ -189,24 +189,30 @@ table .day {
   -o-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
-.slick-slide.slick-center {
+#photo-booth-slide-show .slick-slide.slick-center {
   opacity: 1;
 }
 .slick-slide .booth-image {
   padding: 10px 20px;
-  background: white url(../bower_components/slick.js/slick/ajax-loader.gif) center center no-repeat;
+  background: transparent url(../bower_components/slick.js/slick/ajax-loader.gif) center center no-repeat;
   min-height: 20em;
 }
 .slick-slide.slick-center .booth-image {
 }
 
-#photo-booth-slide-show {
+#photo-booth-slide-show,
+#wedding-slide-show {
   width: 100%;
 }
 
-#photo-booth-slide-show img {
-
+#wedding-slide-show .booth-image {
+  text-align: center;
 }
+#wedding-slide-show .booth-image img {
+  margin: 0 auto;
+  max-height: 40em;
+}
+
 
 @media only screen and (max-width: 740px) {
 
@@ -223,10 +229,10 @@ table .day {
 @media only screen and (max-width: 1025px) {
 
   .slick-prev {
-    left: 30px;
+    left: 25px;
   }
   .slick-next {
-    right: 30px;
+    right: 60px;
   }
 }
 
