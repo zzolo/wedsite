@@ -26,7 +26,7 @@
       var $slides = $('#wedding-slide-show');
       var url;
 
-      weddingPhotos = _.sample(weddingPhotos, weddingPhotos.length);
+      weddingPhotos = _.sample(weddingPhotos, 15);
       _.each(weddingPhotos, function(p, pi) {
         url = 'https://s3.amazonaws.com/hilaryalan.com/wedding/' + p;
         $('<a href="' + url + '" target="_blank"><img data-lazy="' + url + '" /></a>')
@@ -38,6 +38,7 @@
         slide: 'div',
         lazyLoad: 'ondemand',
         slidesToShow: 1,
+        cssEase: 'linear',
         responsive: [{
           breakpoint: 810,
           settings: {
