@@ -222,7 +222,7 @@ table .day {
     padding-top: 5em;
   }
 
-  .slick-slide {
+  #photo-booth-slide-show .slick-slide {
     opacity: 1;
   }
 }
