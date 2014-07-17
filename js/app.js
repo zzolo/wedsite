@@ -21,46 +21,54 @@
       }).setView([44.96, -93.158], 11);
     }
 
-    // General slide show
+    // General slide show.  Weird issues on iOS devices
     if ($('#wedding-slide-show').size() > 0) {
       var $slides = $('#wedding-slide-show');
       var url;
+      var agent = navigator.userAgent.toLowerCase();
 
-      weddingPhotos = _.sample(weddingPhotos, weddingPhotos.length);
-      _.each(weddingPhotos, function(p, pi) {
-        url = 'https://s3.amazonaws.com/hilaryalan.com/wedding/' + p;
-        $('<a href="' + url + '" target="_blank"><img data-lazy="' + url + '" /></a>')
-          .appendTo($slides)
-          .wrap('<div>').wrap('<div>').parent().addClass('booth-image');
-      });
+      if (agent.indexOf('iphone') !== -1 || agent.indexOf('ipad') !== -1) {
+        $('.wedding-slide-show-content').hide();
+      }
+      else {
+        $('.wedding-slide-dropbox').hide();
 
-      $slides.slick({
-        slide: 'div',
-        lazyLoad: 'ondemand',
-        slidesToShow: 1,
-        cssEase: 'linear',
-        responsive: [{
-          breakpoint: 810,
-          settings: {
-            arrows: false
-          }
-        }]
-      });
+        weddingPhotos = _.sample(weddingPhotos, weddingPhotos.length);
+        _.each(weddingPhotos, function(p, pi) {
+          url = 'https://s3.amazonaws.com/hilaryalan.com/wedding/' + p;
+          $('<a href="' + url + '" target="_blank"><img data-lazy="' + url + '" /></a>')
+            .appendTo($slides)
+            .wrap('<div>').wrap('<div>').parent().addClass('booth-image');
+        });
 
-      $(document).on('keydown', function(e) {
-        var rect = $slides[0].getBoundingClientRect();
-        if (rect.top >= (0 - (rect.height * 2 / 3) ) &&
-          rect.left >= (0 - 100) &&
-          rect.bottom <= $(window).height() + (rect.height) &&
-          rect.right <= $(window).width()) {
-          if (e.keyCode == 37) {
-            $slides.slickPrev();
+        $slides.slick({
+          slide: 'div',
+          lazyLoad: 'ondemand',
+          slidesToShow: 1,
+          cssEase: 'linear',
+          responsive: [{
+            breakpoint: 810,
+            settings: {
+              arrows: false
+            }
+          }]
+        });
+
+        $(document).on('keydown', function(e) {
+          var rect = $slides[0].getBoundingClientRect();
+          if (rect.top >= (0 - (rect.height * 2 / 3) ) &&
+            rect.left >= (0 - 100) &&
+            rect.bottom <= $(window).height() + (rect.height) &&
+            rect.right <= $(window).width()) {
+            if (e.keyCode == 37) {
+              $slides.slickPrev();
+            }
+            if (e.keyCode == 39) {
+              $slides.slickNext();
+            }
           }
-          if (e.keyCode == 39) {
-            $slides.slickNext();
-          }
-        }
-      });
+        });
+      }
     }
 
     // Photo booth slide show
